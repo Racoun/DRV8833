@@ -69,8 +69,8 @@ void DRV8833::motorAStop()
 	if (this->motorAAttached) // If motor A is attached...
 	{
 		// ...then stop it.
-		digitalWrite(this->a1, HIGH);
-		digitalWrite(this->a2, HIGH);
+		digitalWrite(this->a1, LOW);
+		digitalWrite(this->a2, LOW);
 	}
 }
 
@@ -119,8 +119,8 @@ void DRV8833::motorBStop()
 	if (this->motorBAttached) // If motor B is attached...
 	{
 		// ...then stop it.
-		digitalWrite(this->b1, HIGH);
-		digitalWrite(this->b2, HIGH);
+		digitalWrite(this->b1, LOW);
+		digitalWrite(this->b2, LOW);
 	}
 }
 
